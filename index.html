@@ -94,6 +94,18 @@
           <p>"The best restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
           <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
         </section>
+          <div id="map" style="width:400px;height:400px;background:grey"></div>  
+           <script>  
+              function myMap() {  
+                var mapOptions = {  
+                    center: new google.maps.LatLng(51.5, -0.12),  
+                    zoom: 10,  
+                    mapTypeId: google.maps.MapTypeId.HYBRID  
+                     }  
+                      var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
+                                  }  
+            </script>  
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script> 
       </div>
       <div class="text-center">&copy; Copyright Gordons Resturant 2016</div>
     </div>
